@@ -8,7 +8,7 @@ On a fresh installation of Raspbian, the Pi boots to the terminal. For these ser
 
 ```text
 NOTE: Following these instructions causes the Raspberry Pi to bypass
-the login prompt on start up. These steps should not followed in an
+the login prompt on start up. These steps should not be followed in an
 environment where security is a priority. Exercise extreme caution
 and consider the ramifications prior to proceeding.
 ```
