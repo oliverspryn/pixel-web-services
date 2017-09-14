@@ -6,8 +6,11 @@ The [PIXEL Web software](http://ledpixelart.com/raspberry-pi/) for the Raspberry
 
 On a fresh installation of Raspbian, the Pi boots to the terminal. For these service scripts to operate properly, the Pi must boot and automatically log into the Desktop interface.
 
-```
-NOTE: Following these instructions causes the Raspberry Pi to bypass the login prompt on start up. These steps should not followed in an environment where security is a priority. Exercise extreme caution and consider the ramifications prior to proceeding.
+```text
+NOTE: Following these instructions causes the Raspberry Pi to bypass
+the login prompt on start up. These steps should not followed in an
+environment where security is a priority. Exercise extreme caution
+and consider the ramifications prior to proceeding.
 ```
 
 1. In a terminal, run: `sudo raspi-config`
@@ -30,7 +33,7 @@ The scripts include default paths to various files and must be properly configur
 
 1. Open `pixel.desktop` and point the reference to the shell script to the fully qualified path for `run.sh`
 
-1. Open `run.sh` and point adjust the path to `pixel.jar` to use the correct, fully qualified path
+1. Open `run.sh` and adjust the path to `pixel.jar` to use the correct, fully qualified path
 
 ## Finalizing the Install
 
@@ -38,6 +41,6 @@ All of the scripts are in place and ready for use.
 
 1. Reboot the Pi
 
-1. After start up is complete, observe the PIXEL interface by going to http://&lt;pi-ip-address&gt;/
+1. After start up is complete, observe the PIXEL interface by going to http://&lt;pi-ip-address&gt;/ in a web browser
 
 1. (Optional) Consider using [Dataplicity](https://dataplicity.com/) to access the PIXEL over the internet
