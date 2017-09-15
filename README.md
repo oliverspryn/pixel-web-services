@@ -17,6 +17,8 @@ and consider the ramifications prior to proceeding.
 
 1. Select the `Boot Options` item
 
+1. Select the `Desktop / CLI` item
+
 1. Select `Desktop Autologin`
 
 ## Install the Scripts
@@ -35,12 +37,14 @@ The scripts include default paths to various files and must be properly configur
 
 1. Open `run.sh` and adjust the path to `pixel.jar` to use the correct, fully qualified path
 
+1. Ensure `run.sh` has execute permissions: `chmod +x run.sh`
+
 ## Finalizing the Install
 
 All of the scripts are in place and ready for use.
 
 1. Reboot the Pi
 
-1. After start up is complete, observe the PIXEL interface by going to http://&lt;pi-ip-address&gt;/ in a web browser
+1. After the start up is complete, observe the PIXEL interface by going to http://pi-ip-address/ in a web browser
 
 1. (Optional) Consider using [Dataplicity](https://dataplicity.com/) to access the PIXEL over the internet
