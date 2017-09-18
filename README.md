@@ -1,6 +1,6 @@
 # PIXEL Web Services
 
-The [PIXEL Web software](http://ledpixelart.com/raspberry-pi/) for the Raspberry Pi is a fantastic way to control the [PIXEL LED Art frame](http://ledpixelart.com/) from the web. By default, this software does not operate on a Raspberry Pi in headless mode and cannot start up on its own when the Pi is rebooted. This service scripts help overcome that limitation to make the PIXEL Web software truly hands off.
+The [PIXEL Web software](http://ledpixelart.com/raspberry-pi/) for the Raspberry Pi is a fantastic way to control the [PIXEL LED Art frame](http://ledpixelart.com/) from the web. By default, this software does not operate on a Raspberry Pi in headless mode and cannot start up on its own when the Pi is rebooted. These service scripts help overcome that limitation to make the PIXEL Web software truly hands off.
 
 ## Configure the Pi
 
@@ -21,6 +21,8 @@ and consider the ramifications prior to proceeding.
 
 1. Select `Desktop Autologin`
 
+1. Reboot the Pi when prompted
+
 ## Install the Scripts
 
 The Raspbian operating system will use the scripts correctly whenever they are moved to the appropriate locations.
@@ -31,11 +33,13 @@ The Raspbian operating system will use the scripts correctly whenever they are m
 
 ## Configure the Scripts
 
-The scripts include default paths to various files and must be properly configured before use.
+The scripts include a basic set of default configurations which require modification before use.
 
 1. Open `pixel.desktop` and point the reference to the shell script to the fully qualified path for `run.sh`
 
 1. Open `run.sh` and adjust the path to `pixel.jar` to use the correct, fully qualified path
+
+1. Ensure the matrix type, corresponding to `-m` option in `run.sh`, is correct for your configuration per [this guide from Adafruit](https://learn.adafruit.com/web-enabled-pixel-on-raspberry-pi/usage#command-line-switches)
 
 1. Ensure `run.sh` has execute permissions: `chmod +x run.sh`
 
