@@ -1,1 +1,1 @@
-sudo /usr/bin/java -jar /home/pi/Downloads/pixel.jar -m 11 -p 80
+sudo /usr/bin/java -jar /home/pi/Downloads/pixel-web-services/pixel.jar -m 11 -p 80
