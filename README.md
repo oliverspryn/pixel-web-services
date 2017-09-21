@@ -23,13 +23,15 @@ and consider the ramifications prior to proceeding.
 
 1. Reboot the Pi when prompted
 
-## Install the Scripts
+## Install the Scripts & Supporting Software
 
 The Raspbian operating system will use the scripts correctly whenever they are moved to the appropriate locations.
 
-1. Move the `pixel.desktop` file to `/home/pi/.config/autostart/pixel.desktop`
+1. Move the `pixel.desktop` file to `/home/pi/.config/autostart/pixel.desktop`, creating the parent directories as needed
 
 1. The JAR and shell script may be moved to any location which is convinent for you
+
+1. The desktop script used above works very reliably with the XTERM terminal, which is not installed by default. Install it by running: `sudo apt-get -y install xterm`.
 
 ## Configure the Scripts
 
